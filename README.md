@@ -23,3 +23,9 @@ To get started with MindMerge, simply follow these steps:
 - **Initiate Skill Exchange:** Initiate skill exchange sessions with potential partners based on mutual interests and availability.
 - **Attend Showcase Sessions:** Attend periodic skill showcase sessions to explore new interests and connect with potential partners.
 - **Provide Feedback:** After each skill exchange session, provide ratings and feedback on the teaching quality to help maintain a high standard of instruction.
+
+# Tech stack
+### The following are the tech stacks required to be installed if you want to run this code on your machine
+
+- HTML, CSS, JavaScript
+- NodeJS, ExpressJS, Mongodb, Mongoose
