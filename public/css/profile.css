@@ -1,0 +1,333 @@
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(MINDMERGE.png) ;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(pubilc/arrow.pnga);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-box{
+    background: rgba(116, 55, 51, 0.5);
+    text-align: center;
+    padding: 40px 90px;
+    color: #fff;
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid #ffffff; /* Black border with 2px width */
+}
+
+.menu-icon, .setting-icon{
+    width: 25px;
+    position: absolute;
+    top: 40px;
+    right: 340px;
+}
+
+.setting-icon{
+    right: 40px;
+}
+
+.profile-pic{
+    width: 150px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 6px;
+    margin-top: 40px;
+}
+
+.social-media img{
+    width: 20px;
+    margin: 30px 5px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.5); /* Added a semi-transparent background */
+}
+
+.logo{
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .btnLogin-popup:hover{
+    background: #fff;
+    color: #162938;
+}
+
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.832);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(94, 93, 93, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+}
+
+.form-box h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #fff;
+    margin: 30px 0;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #999;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #fff;
+    line-height: 57px;
+}
+
+.remember-forget{
+    font-size: .9em;
+    color: #507fa3;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forget label input{
+    accent-color: #507fa3;
+    margin-right: 3px;
+}
+
+.remember-forget a{
+    color: #507fa3;
+    text-decoration: none;
+}
+
+.remember-forget a:hover{
+    text-decoration: underline;
+}
+
+.btn{
+    width: 100%;
+    height: 45px;
+    background: #507fa3;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.login-register{
+    font-size: .9em;
+    color: #507fa3;
+    text-align: center;
+}
+
+/* css for add gap */
+.photo-selection-container {
+    margin-bottom: 15px; /* Increase the margin between the container and the following element */
+}
+
+.photo-selection-container h2 {
+    margin-bottom: 15px; /* Increase the margin below the heading */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Increase the margin between form groups */
+}
+
+/* Optionally, adjust margins for labels and inputs */
+label {
+    margin-bottom: 6px; /* Increase the margin below labels */
+}
+
+input[type="radio"],
+button {
+    margin-bottom: 8px; /* Increase the margin below radio buttons and submit button */
+}
+button[type="submit"] {
+    padding: 10px 20px; /* Increase padding to make the button larger */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+}
+
+
+
+
+/* profile details */
+#profileDetails {
+    position: relative;
+    width: 400px;
+    height: 520px;
+    background: #ff574a; /* Set the background color */
+    /*border: 2px solid rgba(255, 255, 255, 0.832); /* Same border as the first div */
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(94, 93, 93, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Text color */
+    padding: 40px; 
+    border: 2px solid #ffffff; /* Black border with 2px width */
+}
+
+/* new div*/
+#profileDetails {
+    position: relative;
+    width: 400px;
+    height: 630px;
+    background: rgba(255, 87, 74, 0.1); /* Reduced transparency to 60% */
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(94, 93, 93, 0.5);
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* Text color */
+    padding: 40px;
+    border: 2px solid #ffffff; /* Black border with 2px width */
+
+}
+
+#details {
+    width: 75%; /* Set both textareas to take 80% of the container width */
+    height: 30%; /* Set height of each textarea */
+    margin: 20px 0; /* Add margin between textareas */
+    color: #939597;
+}
+
+#description {
+    width: 80%; /* Set both textareas to take 80% of the container width */
+    height: 40%; /* Set height of each textarea */
+    margin: 20px 0; /* Add margin between textareas */
+    color: #939597;
+}
+
+textarea {
+    background-color: #acacac; /* Gray color */
+}
+
+#details,
+#description {
+    width: 100%; /* Ensure textarea takes full width */
+    margin: 10px 10px; /* Add margin between textareas */
+    position: relative;
+}
