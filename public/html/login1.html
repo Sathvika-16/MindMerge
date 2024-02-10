@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h2 class="MindMerge">MindMerge</h2>
+        <nav class="navigation">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/services">Services</a>
+            <a href="/contact">Contact us</a>
+            <button class="btnLogin-popup"  href="/login" >Login</button>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="username"></ion-icon></span>
+                    <input type="text" required>
+                    <label>username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forget">
+                    <label><input type="checkbox">
+                        Remember me </label>
+                        <a href="#">Forget Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account? <a href="#" id="registerLink" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+
+        <!-- Registration Form with an ID -->
+        <div class="form-box register" id="registerForm">
+            <h2>Registration</h2>
+            <form action="#" >
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+            
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="password" name="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="passwordConfirm" name="passwordConfirm" required>
+                    <label>Re-Enter Password</label>
+                    <p id="passwordError" class="error"></p>
+                </div>
+                <div class="remember-forget">
+                    <label><input type="checkbox"> I agree to the terms & conditions </label>
+                </div>
+                <button type="submit" id="nextButton" class="btn">Next</button>
+                <div class="login-register">
+                    <p>Already have an account? <a href="/login" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const registerLink = document.getElementById('registerLink');
+            if (registerLink) {
+                registerLink.addEventListener('click', function(e) {
+                    e.preventDefault(); // Prevent the default action
+                    document.getElementById('registerForm').scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                });
+            }
+        });
+    
+        if (nextButton) {
+            nextButton.addEventListener('click', function(e) {
+                e.preventDefault(); // Prevent the default form submission
+                // Perform additional validation if needed
+                const passwordInput = document.getElementById('password');
+                const confirmPasswordInput = document.getElementById('passwordConfirm');
+                const passwordError = document.getElementById('passwordError');
+
+                if (passwordInput.value !== confirmPasswordInput.value) {
+                    passwordError.innerText = 'Passwords do not match';
+                    return; // Do not proceed with redirection if passwords do not match
+                } else {
+                    passwordError.innerText = ''; // Clear the error message if passwords match
+                }
+
+                // Redirect to profile.html
+                window.location.href = '/profile'; // Change the URL as necessary
+                // Alternatively, use JavaScript to scroll to the .profile section if it's on the same page
+                // document.querySelector('.profile').scrollIntoView({
+                //     behavior: 'smooth',
+                //     block: 'start'
+                // });
+            });
+        }
+
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
