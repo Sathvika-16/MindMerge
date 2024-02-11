@@ -33,4 +33,15 @@ To get started with MindMerge, simply follow these steps:
 - NodeJS, ExpressJS, Mongodb, Mongoose
 
 # link to my github pages:
-[MindMerge](https://sathvika-16.github.io/MindMerge/home.html)
+
+[Home page](https://sathvika-16.github.io/MindMerge/home.html)
+
+[Skills Page](https://sathvika-16.github.io/MindMerge/skills.html)
+
+[Profile Page](https://sathvika-16.github.io/MindMerge/profile.html)
+
+[About Us](https://sathvika-16.github.io/MindMerge/about.html)
+
+[Contact Us](https://sathvika-16.github.io/MindMerge/contact.html)
+
+[Login page](https://sathvika-16.github.io/MindMerge/login1.html)
