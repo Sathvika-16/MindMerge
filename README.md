@@ -1,4 +1,6 @@
 # MindMerge
+![logo](logo.jpg)
+
 MindMerge is a web-based platform designed to facilitate skill exchange and increase community-driven learning in local and global range. This platform provides a dedicated space for users to create profiles highlighting their skills and what they want to learn. It removes financial and geographical barriers, creating a vibrant ecosystem of collaboration, mutual learning and networking.
 
 # Use Case
