@@ -31,3 +31,6 @@ To get started with MindMerge, simply follow these steps:
 
 - HTML, CSS, JavaScript
 - NodeJS, ExpressJS, Mongodb, Mongoose
+
+# link to my github pages:
+![MindMerge](https://sathvika-16.github.io/MindMerge/home.html)
